@@ -1,0 +1,44 @@
+body {
+    font-size: 1.5em;
+    background-image: url(../Task1/25242353-abstract-sky-blue-background-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hh {
+    display: flex;
+    justify-content: center;
+    border: 2px;
+    border-color: black;
+    border-style: double;
+}
+
+h1 {
+    font-size: 5em;
+    font-style:italic; 
+}
+
+nav {
+ display: flex;
+ justify-content: center
+}
+
+a {
+    display: block;
+    color: red;
+
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    display: block;
+    margin: 30px;
+}
+
+p::before {
+    content: "¶";
+}
