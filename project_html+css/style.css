@@ -1,0 +1,380 @@
+@font-face {
+font-family: SourceSansPro-Light; 
+src: url(./project/fonts/text/SourceSansPro-Light.otf); 
+}
+
+@font-face {
+    font-family: SourceSansPro-Semibold; 
+    src: url(./project/fonts/text/SourceSansPro-Semibold.otf); 
+    }
+
+ @font-face {
+    font-family: font awesome; 
+    src: url(./project/fonts/fontawesome-webfont.ttf); 
+    }
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.navigation-bar{
+    list-style: none;
+    display: flex;
+}
+
+.navigation-bar__ancor {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-bar__button {
+    margin-left: 20px;
+    font-family: SourceSansPro-Semibold;
+    font-size: 15px;
+}
+
+.nav__flex-container {
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.nav__content{
+    font-family: SourceSansPro-Semibold;
+    font-size: 15px;
+}
+
+.first__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card__main-pic{
+    width: 50%;
+    height: 757px;
+}
+
+.card__main-pic--background-pic {
+    background-image: url(./project/images/home-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card__bg-pink {
+    width: 50%;
+    height: 757px;
+    background-color: #F0E2D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.bg-pink__content{
+margin: 40px;
+}
+
+.bg-pink__content-welcome{
+    font-family: SourceSansPro-Light;
+    font-size: 14px;
+
+}
+
+.bg-pink__content-hello {
+    font-family: SourceSansPro-Light;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.bg-pink__content-hello--bold {
+    font-weight: bold;
+}
+
+.bg-pink__content-lorem {
+    font-family: SourceSansPro-Light;
+    font-size: 14px;
+}
+
+.button__get-started {
+    background-color: #F0E2D7;
+    border-style: solid;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 22px;
+}
+
+.button__get-started--text {
+    font-family: SourceSansPro-Semibold;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 37px;
+}
+
+.bg-pink__button {
+    margin-top: 55px;
+}
+
+.second__row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card__donec-text {
+    font-family: SourceSansPro-Light;
+    margin-left: 30px;
+}
+
+.card__donec {
+    height: 300px;
+    width: 50%;
+    display: flex;
+}
+
+.card__donec-text--title {
+    font-size: 35px;
+    margin-bottom: 20px
+}
+
+.card__donec-text--center {
+    color: #E4AE58;
+    font-size: 14px;
+    margin-bottom: 22px;
+    margin-top: 10px;
+}
+
+.card__donec-text--last {
+    font-size: 14px;
+}
+
+.card__donec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card__my-skills-img {
+    height: 300px;
+    width: 25%;
+    background-image: url(./project/images/about-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card__my-skills {
+    height: 300px;
+    width: 25%;
+    background-color: #E4AE58;
+}
+
+.card__my-skills-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__my-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__my-skills-text {
+    font-family: SourceSansPro-Light;
+    color: white;
+}
+
+.card__my-skills-text-big {
+font-size: 35px;
+}
+
+.card__my-skills-text-small{
+font-size: 14px;
+margin-bottom: 30px;
+}
+
+.card-range__skill {
+    width: 100%;
+}
+
+.card-range {
+    width: 100%;
+}
+
+.card-range--white {
+    height: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.card-range--black-fe {
+    height: 3px;
+    background-color: black;
+    width: 82%;
+}
+
+.card-range--black-bp {
+    height: 3px;
+    background-color: black;
+    width: 89%;
+}
+
+.card-range--black-html {
+    height: 3px;
+    background-color: black;
+    width: 95%;
+}
+
+.card-range-text__box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-family: SourceSansPro-Semibold;
+}
+
+.third-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-product {
+    height: 300px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: SourceSansPro-Light;
+    color: white;
+}
+
+.card-product--black {
+    height: 300px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: SourceSansPro-Light;
+    color: black;
+}
+
+.card-product__design {
+background-color: #E4AE58;
+}
+
+.card-product__strategy {
+background-color: #E9714C;
+}
+
+.card-product__app {
+background-color: black;
+}
+
+
+.card-product__design-text-small {
+    text-align: center;
+    font-size: 14px;
+}
+
+.card-product__design-text-big {
+font-size: 35px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    
+    
+    .fourth-row__image {
+        background-image: url(./project/images/experience-img.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 50%;
+    }
+
+    .fourth-row__epieriance {
+        background-color: #E9714C;
+        height: 300px;
+        width: 50%;
+        display: flex;
+    }    
+
+@media screen and (max-width: 1024px){
+    .card__main-pic{
+        width: 100%;
+    }
+
+    .card__bg-pink {
+        width: 100%;    
+    }
+    
+    .card {
+        width: 100%;
+    }
+
+    .card-product {
+        width: 50%;
+        
+    }
+
+    .card__donec {
+        width: 50%;
+    }
+
+    .card__my-skills-img {
+        width: 50%;
+    }
+
+    .card-product--black {
+        width: 50%;
+    }
+        
+
+} 
+
+
+
+@media screen and (max-width: 700px){
+    .card-product {
+        width: 100%;
+    }
+
+    .card-product--black {
+        width: 100%;
+    }
+
+    .card__donec {
+        width: 100%;
+    }
+
+    .card__my-skills-img {
+        width: 100%;
+    }
+    
+    .fourth-row__image {
+        width: 100%;
+    }
+
+    .fourth-row__epieriance {
+        width: 100%;
+    }
+}
