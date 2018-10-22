@@ -1,380 +1,557 @@
-@font-face {
-font-family: SourceSansPro-Light; 
-src: url(./project/fonts/text/SourceSansPro-Light.otf); 
-}
-
-@font-face {
-    font-family: SourceSansPro-Semibold; 
-    src: url(./project/fonts/text/SourceSansPro-Semibold.otf); 
-    }
-
- @font-face {
-    font-family: font awesome; 
-    src: url(./project/fonts/fontawesome-webfont.ttf); 
-    }
- 
-
 * {
-    margin: 0;
     padding: 0;
-}
-.nav {
-width: 100%;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+    margin: 0;
 }
 
-.navigation-bar{
-    list-style: none;
-    display: flex;
+@font-face {
+    src: url(./project/fonts/text/SourceSansPro-Semibold.otf);
+    font-family: SourceSansPro-semibold;
 }
 
-.navigation-bar__ancor {
-    text-decoration: none;
-    color: black;
+@font-face {
+    src: url(./project/fonts/text/SourceSansPro-Light.otf);
+    font-family: SourceSansPro-light;
 }
 
-.navigation-bar__button {
-    margin-left: 20px;
-    font-family: SourceSansPro-Semibold;
+.text-semibold {
+    font-family: SourceSansPro-semibold;
+}
+
+.text-light {
+    font-family: SourceSansPro-light;
+}
+
+.home-card__text {
     font-size: 15px;
+    margin-top: 4%;
+    margin-left: 30%;
+    text-shadow: 1px 1px 0 white;
 }
 
-.nav__flex-container {
-    width: 80%;
-    margin-left: 200px;
-    margin-top: 30px;
-    position: absolute;
-}
-
-.nav__content{
-    font-family: SourceSansPro-Semibold;
-    font-size: 15px;
-}
-
-.first__row {
+.displaying-type-wrap {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.card__main-pic{
+.first-row__card {
     width: 50%;
-    height: 757px;
+    height: 56vw;
 }
 
-.card__main-pic--background-pic {
+.home-card__image {
     background-image: url(./project/images/home-img.jpg);
-    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.card__bg-pink {
-    width: 50%;
-    height: 757px;
-    background-color: #F0E2D7;
+.first-row__card--pink {
+    background-color: rgb(240, 226, 215);
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 50%;
+}
+
+.nav__center {
+    position: absolute;;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    width: 100%;
+    padding-top: 2%;
 }
 
-.bg-pink__content{
-margin: 40px;
+.link-text {
+    text-decoration: none;
+    color: rgb(101, 116, 131);
 }
 
-.bg-pink__content-welcome{
-    font-family: SourceSansPro-Light;
+.link-text:hover {
+    color: rgb(236, 209, 142);
+}
+
+.text-light--upper-text {
     font-size: 14px;
-
+    color: rgb(154, 154, 156);
+    margin-bottom: 10px;
 }
 
-.bg-pink__content-hello {
-    font-family: SourceSansPro-Light;
+.text-light--hello {
     font-size: 35px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.bg-pink__content-hello--bold {
-    font-weight: bold;
-}
-
-.bg-pink__content-lorem {
-    font-family: SourceSansPro-Light;
-    font-size: 14px;
-}
-
-.button__get-started {
-    background-color: #F0E2D7;
-    border-style: solid;
-    border-color: black;
-    border: 2px solid black;
-    border-radius: 22px;
-}
-
-.button__get-started--text {
-    font-family: SourceSansPro-Semibold;
+.text-light--lorem {
     font-size: 15px;
-    font-weight: bold;
+    color: rgb(154, 154, 156);
+    margin-bottom: 40px;
+}
+
+.six-row-card__proin {
+    text-align: center;
+}
+
+.button {
+    border: 2px;
+    border-color: black;
+    border-radius: 22px;
+    border-style: solid;
+    background-color: rgb(240, 226, 215);
+}
+
+.button:hover {
+   border-color:  rgb(236, 209, 142);
+   cursor: pointer;
+}
+
+.button__start {
     padding: 14px 37px;
 }
 
-.bg-pink__button {
-    margin-top: 55px;
+.button__start:hover {
+    color: rgb(236, 209, 142);
 }
 
-.second__row{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.card__donec-text {
-    font-family: SourceSansPro-Light;
-    margin-left: 30px;
-}
-
-.card__donec {
-    height: 300px;
-    width: 50%;
-    display: flex;
-}
-
-.card__donec-text--title {
-    font-size: 35px;
-    margin-bottom: 20px
-}
-
-.card__donec-text--center {
-    color: #E4AE58;
-    font-size: 14px;
-    margin-bottom: 22px;
-    margin-top: 10px;
-}
-
-.card__donec-text--last {
-    font-size: 14px;
-}
-
-.card__donec {
+.nav-card__content-box {
+    margin: 40px;    
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    justify-content: space-between;
 }
 
-.card__my-skills-img {
-    height: 300px;
-    width: 25%;
+.nav-card__displaying {
+    display: flex;
+    align-items: center;
+}
+
+.card__donec__content-box {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card__donec {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.text-light--big {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.text-light--gold {
+    font-size: 14px;
+    color: rgb(236, 209, 142);
+    margin-bottom: 20px;
+}
+
+.text-light--phasselus {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.text-light--Quisque {
+    font-size: 14px;
+}
+
+.card__about-img {
     background-image: url(./project/images/about-img.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.card__my-skills {
-    height: 300px;
+.second-row__card-about {
     width: 25%;
-    background-color: #E4AE58;
-}
-
-.card__my-skills-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 22vw; 
 }
 
 .card__my-skills {
+    background-color: #E4AE58;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card__my-skills-text {
-    font-family: SourceSansPro-Light;
+.text-light--white-big {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-light--white-small {
+    font-size: 14px;
     color: white;
 }
 
-.card__my-skills-text-big {
-font-size: 35px;
-}
-
-.card__my-skills-text-small{
-font-size: 14px;
-margin-bottom: 30px;
-}
-
-.card-range__skill {
-    width: 100%;
-}
-
-.card-range {
-    width: 100%;
-}
-
-.card-range--white {
-    height: 3px;
+.white__stripe {
     background-color: white;
+    height: 3px;
+    width: 100%;
+}
+
+.black-stripe__fe {
+    background-color: black;
+    height: 3px;
+    width: 90%;
+}
+
+.fe__mesure-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.black-stripe__be {
+    background-color: black;
+    height: 3px;
+    width: 70%;
+}
+
+.black-stripe__html {
+    background-color: black;
+    height: 3px;
+    width: 80%;
+}
+
+.my-skills__content-box {
+    width: 80%;
+}
+
+.fe__mesure-text {
+    margin-top: 15px;
+}
+
+.fe__mesure-text--white {
+    color: white;
+}
+
+.fe__mesure-text--margin{
+    margin-top: 40px;
+}
+
+.third-row__card {
+    width: 25%;
+    height: 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.third-row__card--yellow {
+    background-color: #E4AE58;
+    color: white;
+}
+
+.third-row__card--red {
+    background-color: #E9714C;
+    color: white;
+}
+
+.third-row__card--black {
+    background-color: black;
+    color: white;
+}
+
+.third-row__card--title {
+    font-size: 25px;
+    padding-top: 10px;
+    margin: 20px;
+
+}
+
+.third-row__card--text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.fa {
+    color: white;
+}
+
+.fourth-row__card {
+    width: 50%;
+    height: 30vw;
+}
+
+.fourth-row__card-experiences-img {
+    background-image: url(./project/images/experience-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth-row__card-experiences--red {
+    background-color: #E9714C;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fourth-row__card-red--white {
+    color: white;
+}
+
+.fourth-row__card-red__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.fourth-row__card-red--big {
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
-.card-range--black-fe {
-    height: 3px;
-    background-color: black;
-    width: 82%;
-}
-
-.card-range--black-bp {
-    height: 3px;
-    background-color: black;
-    width: 89%;
-}
-
-.card-range--black-html {
-    height: 3px;
-    background-color: black;
-    width: 95%;
-}
-
-.card-range-text__box {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-family: SourceSansPro-Semibold;
-}
-
-.third-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.card-product {
-    height: 300px;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: SourceSansPro-Light;
-    color: white;
-}
-
-.card-product--black {
-    height: 300px;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: SourceSansPro-Light;
-    color: black;
-}
-
-.card-product__design {
-background-color: #E4AE58;
-}
-
-.card-product__strategy {
-background-color: #E9714C;
-}
-
-.card-product__app {
-background-color: black;
-}
-
-
-.card-product__design-text-small {
-    text-align: center;
+.fourth-row__card-red {
     font-size: 14px;
 }
 
-.card-product__design-text-big {
-font-size: 35px;
+.fourth-row__card-red-exp {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
 }
 
-.row {
-    width: 100%;
+.text-semibold--middle {
+    font-size: 20px;
+
+}
+
+.fourth-row__card-red-exp {
+    font-size: 14px;
+    color: white;
+}
+
+.text-light--xtra-small {
+    color: black;
+    margin-left: 5px;
+}
+
+.text-light--xtra-small--white {
+    margin-top: 15px;
+}
+
+.card-red__logo-spaceing {
+    padding-top: 5px;
+    padding-right: 40px;
+}
+
+.fifth-row__card-experiences-img {
+    background-image: url(./project/images/education-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fifth-row__card {
+    width: 50%;
+    height: 30vw;
+}
+
+.fifth-row__card-experiences--red {
+    background-color: #E4AE58;
     display: flex;
-    flex-wrap: wrap;
-    }
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.six-row__card {
+    width: 100%;
+    height: 30vw;
+    background-image: url(./project/images/quotes-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.six-row-card_black-shadow {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.six-row-card__content-box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.six-row-card__curabitur {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.seventh-row__card-img {
+    width: 25%;
+    height: 40vw;
+    background-image: url(./project/images/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.seventh-row__card-form {
+    width: 50%;
+    height: 40vw;
+    background-color: #E9714C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventh-row__card-contact {
+    width: 25%;
+    height: 40vw;
+    background-color: black;
+}
+
+.form__small-input {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #E9714C;
+    border-style: none;
+    border-bottom: #E4AE58 1px solid;
+    color: white;
+}
+
+.form__small-input::placeholder {
+    color: white;
+}
+
+.form__content-box {
+    width: 80%;
+}
+
+.form__button {
+    border: none;
+    border-radius: 22px;
+    border-style: none;
+    background-color: rgb(240, 226, 215);
+    margin-top: 40px;
+}
+
+.button__send {
+    display: block;
+    padding: 12px 100px;
+    font-size: 14px;
+}
+
+.button__send:hover {
+    color: rgb(236, 209, 142);
+}
+
+.card-contact__content-box {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+
+}
+
+.card-contact__text-visit {
+    color: white;
+    font-size: 30px;
+}
+
+.card-contact__text-street {
+    color: rgb(154, 154, 156);
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+.card-contact__text-contact {
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
     
+}
+
+.card-contact__text-ph-number {
+    color: rgb(154, 154, 156);
+    font-size: 14px;
+    padding-top: 14px;
+    text-decoration: none;
+}
+
+.fa-globe-asia {
+    margin-right: 10px;
+    color: rgb(154, 154, 156);
+}
+
+.card-contact__text-email {
+    color: #E4AE58;
+    font-size: 14px;
+    padding-top: 14px;
+    text-decoration: none;
+}   
+
+.fa-envelope {
+    margin-right: 10px;
+    color: rgb(154, 154, 156);
+}
+
+.fa-phone {
+    margin-right: 10px;
+    color: rgb(154, 154, 156);
     
-    
-    .fourth-row__image {
-        background-image: url(./project/images/experience-img.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 300px;
-        width: 50%;
-    }
+}
 
-    .fourth-row__epieriance {
-        background-color: #E9714C;
-        height: 300px;
-        width: 50%;
-        display: flex;
-    }    
+.eighth-row__card {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-@media screen and (max-width: 1024px){
-    .card__main-pic{
-        width: 100%;
-    }
+.card__socials {
+    color: rgb(154, 154, 156);
+    text-align: center;
+}
 
-    .card__bg-pink {
-        width: 100%;    
-    }
-    
-    .card {
-        width: 100%;
-    }
+.sprite__socials {
+    color: rgb(154, 154, 156);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
 
-    .card-product {
-        width: 50%;
-        
-    }
+.socials__icons {
+    text-decoration: none;
+    color: rgb(154, 154, 156);
+}
 
-    .card__donec {
-        width: 50%;
-    }
+.socials__icons:hover {
+    color: #E4AE58;
+}
 
-    .card__my-skills-img {
-        width: 50%;
-    }
+.card-contact__text--temp:hover {
+    color: black;
+}
 
-    .card-product--black {
-        width: 50%;
-    }
-        
+.third-row__card {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-} 
-
-
-
-@media screen and (max-width: 700px){
-    .card-product {
-        width: 100%;
-    }
-
-    .card-product--black {
-        width: 100%;
-    }
-
-    .card__donec {
-        width: 100%;
-    }
-
-    .card__my-skills-img {
-        width: 100%;
-    }
-    
-    .fourth-row__image {
-        width: 100%;
-    }
-
-    .fourth-row__epieriance {
-        width: 100%;
-    }
+.container {
+    display: none;
 }

@@ -1,0 +1,117 @@
+@media (max-width: 1180px) {
+    .card__donec{
+        width: 100%;
+        height: 22vw;
+    }
+    .second-row__card-about {
+        width: 50%;
+        height: 44vw;
+    }
+    .seventh-row__card-form {
+        width: 100%;
+        height: 50vw;
+    }
+    .seventh-row__card-contact {
+        width: 50%;
+    }
+    .seventh-row__card-img{
+        width: 50%;
+    }
+    .third-row__card {
+        width: 50%;
+        height: 44vw;
+        
+    }
+   
+    .navi {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 970px) {
+    .first-row__card{
+        width: 100%;
+        height: 100vw;
+    }
+    .card__donec{
+        height: 44vw;
+    }
+    .fourth-row__card {
+        width: 100%;
+        height: 60vw;
+    }
+    .six-row__card {
+        height: 40vw;
+    }
+    .seventh-row__card-form{
+        height: 80vw;
+    }
+    
+}
+
+@media (max-width: 740px) {
+    .second-row__card-about {
+        width: 100%;
+        height: 88vw;
+    }
+    .third-row__card {
+        width: 100%;
+        height: 100vw;
+    }
+    .seventh-row__card-img{
+        width: 100%;
+        height: 100vw;
+    }
+    .seventh-row__card-contact{
+        width: 100%;
+        height: 100vw; 
+    }
+    .six-row__card{
+        height: 100vw;
+    }
+    .seventh-row__card-form{
+        height: 100vw;
+    }
+
+    .six-row-card__content-box {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .fourth-row__card-red__container {
+        padding-right: 10px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .card__donec {
+        height: 100vw;
+    }
+    .fourth-row__card {
+        height: 150vw;
+    }
+    .seventh-row__card-form{
+        height: 150vw;
+    }
+    .six-row__card{
+        height: 150vw;
+    }
+    .first-row__card{
+        height: 150vw;
+    }
+    .eighth-row__card {
+        height: 40vw;
+    }
+    .first-row__card{
+        height: 180vw;
+    }
+    .nav-card__content-box {
+        margin-top: 0;
+    }
+}
+
