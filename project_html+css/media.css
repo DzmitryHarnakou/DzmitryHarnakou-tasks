@@ -22,15 +22,6 @@
         height: 44vw;
         
     }
-   
-    .navi {
-        display: none;
-    }
-
-    .container {
-        display: block;
-    }
-    
 }
 
 @media (max-width: 970px) {
@@ -52,6 +43,23 @@
         height: 80vw;
     }
     
+    .nav__container {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        background-color: black;
+        padding: 1%;
+        border-radius: 0.5em;
+        box-shadow: (0 0 4px black);
+        opacity: 0.5;
+        transition: top 0.3s;
+    }
+
+    .nav__container:hover {
+        opacity: 1;
 }
 
 @media (max-width: 740px) {
@@ -112,6 +120,9 @@
     }
     .nav-card__content-box {
         margin-top: 0;
+    }
+    .sprite__socials {
+        width: 80%;
     }
 }
 

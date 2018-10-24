@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-size: 14px;
+
 }
 
 @font-face {
@@ -22,7 +24,7 @@
 }
 
 .home-card__text {
-    font-size: 15px;
+    font-size: 1em;
     margin-top: 4%;
     margin-left: 30%;
     text-shadow: 1px 1px 0 white;
@@ -77,18 +79,22 @@
 }
 
 .text-light--upper-text {
-    font-size: 14px;
+    font-size: 1em;
     color: rgb(154, 154, 156);
     margin-bottom: 10px;
 }
 
+.text-semibold--hello {
+    font-size: 1.4em;   
+}
+
 .text-light--hello {
-    font-size: 35px;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 .text-light--lorem {
-    font-size: 15px;
+    font-size: 1em;
     color: rgb(154, 154, 156);
     margin-bottom: 40px;
 }
@@ -131,7 +137,7 @@
     align-items: center;
 }
 
-.card__donec__content-box {
+.donec__content-box {
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -143,23 +149,23 @@
 }
 
 .text-light--big {
-    font-size: 35px;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 .text-light--gold {
-    font-size: 14px;
+    font-size: 1em;
     color: rgb(236, 209, 142);
     margin-bottom: 20px;
 }
 
 .text-light--phasselus {
-    font-size: 14px;
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
 .text-light--Quisque {
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .card__about-img {
@@ -182,13 +188,13 @@
 }
 
 .text-light--white-big {
-    font-size: 35px;
+    font-size: 2.5em;
     color: white;
     margin-bottom: 10px;
 }
 
 .text-light--white-small {
-    font-size: 14px;
+    font-size: 1em;
     color: white;
 }
 
@@ -208,7 +214,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 0.9em;
 }
 
 .black-stripe__be {
@@ -265,7 +271,7 @@
 }
 
 .third-row__card--title {
-    font-size: 25px;
+    font-size: 1.8em;
     padding-top: 10px;
     margin: 20px;
 
@@ -309,12 +315,12 @@
 }
 
 .fourth-row__card-red--big {
-    font-size: 35px;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .fourth-row__card-red {
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .fourth-row__card-red-exp {
@@ -324,12 +330,12 @@
 }
 
 .text-semibold--middle {
-    font-size: 20px;
+    font-size: 1.4em;
 
 }
 
 .fourth-row__card-red-exp {
-    font-size: 14px;
+    font-size: 1em;
     color: white;
 }
 
@@ -449,7 +455,7 @@
 .button__send {
     display: block;
     padding: 12px 100px;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .button__send:hover {
@@ -465,25 +471,25 @@
 
 .card-contact__text-visit {
     color: white;
-    font-size: 30px;
+    font-size: 2.5em;
 }
 
 .card-contact__text-street {
     color: rgb(154, 154, 156);
-    font-size: 14px;
+    font-size: 1em;
     padding-top: 14px;
 }
 
 .card-contact__text-contact {
     color: white;
-    font-size: 30px;
+    font-size: 2.5em;
     margin-top: 30px;
     
 }
 
 .card-contact__text-ph-number {
     color: rgb(154, 154, 156);
-    font-size: 14px;
+    font-size: 1em;
     padding-top: 14px;
     text-decoration: none;
 }
@@ -495,7 +501,7 @@
 
 .card-contact__text-email {
     color: #E4AE58;
-    font-size: 14px;
+    font-size: 1em;
     padding-top: 14px;
     text-decoration: none;
 }   
@@ -527,7 +533,7 @@
 
 .sprite__socials {
     color: rgb(154, 154, 156);
-    margin-top: 50px;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
