@@ -1,3 +1,9 @@
+@media (min-width: 2500px) {
+ * {
+     font-size: 42px;
+ }
+}
+
 @media (max-width: 1180px) {
     .card__donec{
         width: 100%;
@@ -24,7 +30,7 @@
     }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1020px) {
     .first-row__card{
         width: 100%;
         height: 100vw;
@@ -54,12 +60,8 @@
         padding: 1%;
         border-radius: 0.5em;
         box-shadow: (0 0 4px black);
-        opacity: 0.5;
         transition: top 0.3s;
     }
-
-    .nav__container:hover {
-        opacity: 1;
 }
 
 @media (max-width: 740px) {
@@ -126,3 +128,11 @@
     }
 }
 
+@media (max-width: 500px) {
+.nav__container {
+   width: 100%;
+}
+.link-text {
+    font-size: 12px;
+}
+}

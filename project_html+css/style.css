@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
@@ -48,7 +48,7 @@
     background-position: center;
 }
 
-.first-row__card--pink {
+.first-row__card--greetting {
     background-color: rgb(240, 226, 215);
 }
 
@@ -153,7 +153,7 @@
     margin-bottom: 10px;
 }
 
-.text-light--gold {
+.text-light--sed {
     font-size: 1em;
     color: rgb(236, 209, 142);
     margin-bottom: 20px;
@@ -187,13 +187,13 @@
     align-items: center;
 }
 
-.text-light--white-big {
+.text-light--My-skills {
     font-size: 2.5em;
     color: white;
     margin-bottom: 10px;
 }
 
-.text-light--white-small {
+.text-light--skills-list {
     font-size: 1em;
     color: white;
 }
@@ -237,7 +237,7 @@
     margin-top: 15px;
 }
 
-.fe__mesure-text--white {
+.fe__mesure-text--persent {
     color: white;
 }
 
