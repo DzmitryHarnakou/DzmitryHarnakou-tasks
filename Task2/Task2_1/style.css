@@ -66,8 +66,8 @@ color: silver;
 }
 
 .button_style {
-    background-color: blue;
-    font-weight: bold;
+    background-color: rgb(2, 133, 189);
+    font-weight: 500;
     border-radius: 6px;
     border-style: none;
     padding: 5px;
@@ -75,15 +75,10 @@ color: silver;
     padding-right: 8px;
     margin-bottom: 20px;
     color: white;
+    box-shadow: 0 0 2px black;
 }
 
 .radio_style {
     background-color: white;
     border-radius: 0;
 }
-
-.checkbox{
-    background-color: white;
-    color: white;
-}
-
