@@ -1,0 +1,17 @@
+.fifth-row__card-experiences-img {
+    background-image: url(./project/images/education-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fifth-row__card {
+    width: 50%;
+    height: 30vw;
+}
+
+.fifth-row__card-experiences--red {
+    background-color: #E4AE58;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

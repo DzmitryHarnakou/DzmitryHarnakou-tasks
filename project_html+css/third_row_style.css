@@ -1,0 +1,40 @@
+.third-row__card {
+    width: 25%;
+    height: 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.third-row__card--yellow {
+    background-color: #E4AE58;
+    color: white;
+}
+
+.third-row__card--red {
+    background-color: #E9714C;
+    color: white;
+}
+
+.third-row__card--black {
+    background-color: black;
+    color: white;
+}
+
+.third-row__card--title {
+    font-size: 1.8em;
+    padding-top: 10px;
+    margin: 20px;
+
+}
+
+.third-row__card--text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.fa {
+    color: white;
+}

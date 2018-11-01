@@ -1,0 +1,31 @@
+.six-row__card {
+    width: 100%;
+    height: 30vw;
+    background-image: url(./project/images/quotes-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.six-row-card_black-shadow {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.six-row-card__content-box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.six-row-card__curabitur {
+    padding-top: 30px;
+    text-align: center;
+}

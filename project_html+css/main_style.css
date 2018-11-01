@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+
+}
+
+@font-face {
+    src: url(./project/fonts/text/SourceSansPro-Semibold.otf);
+    font-family: SourceSansPro-semibold;
+}
+
+@font-face {
+    src: url(./project/fonts/text/SourceSansPro-Light.otf);
+    font-family: SourceSansPro-light;
+}
+
+.text-semibold {
+    font-family: SourceSansPro-semibold;
+}
+
+.text-light {
+    font-family: SourceSansPro-light;
+}
+
+.displaying-type-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container {
+    display: none;
+}

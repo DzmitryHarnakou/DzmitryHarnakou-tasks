@@ -1,0 +1,116 @@
+.seventh-row__card-img {
+    width: 25%;
+    height: 40vw;
+    background-image: url(./project/images/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.seventh-row__card-form {
+    width: 50%;
+    height: 40vw;
+    background-color: #E9714C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventh-row__card-contact {
+    width: 25%;
+    height: 40vw;
+    background-color: black;
+    
+}
+
+.form__small-input {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #E9714C;
+    border-style: none;
+    border-bottom: #E4AE58 1px solid;
+    color: white;
+}
+
+.form__small-input::placeholder {
+    color: white;
+}
+
+.form__content-box {
+    width: 80%;
+}
+
+.form__button {
+    border: none;
+    border-radius: 22px;
+    border-style: none;
+    background-color: rgb(240, 226, 215);
+    margin-top: 40px;
+}
+
+.button__send {
+    display: block;
+    padding: 12px 100px;
+    font-size: 1em;
+}
+
+.button__send:hover {
+    color: rgb(236, 209, 142);
+}
+
+.card-contact__content-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5%;
+
+}
+
+.card-contact__text-visit {
+    color: white;
+    font-size: 2.5em;
+}
+
+.card-contact__text-street {
+    color: rgb(154, 154, 156);
+    font-size: 1em;
+    padding-top: 14px;
+}
+
+.card-contact__text-contact {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 30px;
+    
+}
+
+.card-contact__text-ph-number {
+    color: rgb(154, 154, 156);
+    font-size: 1em;
+    padding-top: 14px;
+    text-decoration: none;
+}
+
+.fa-globe-asia {
+    margin-right: 10px;
+    color: rgb(154, 154, 156);
+}
+
+.card-contact__text-email {
+    color: #E4AE58;
+    font-size: 1em;
+    padding-top: 14px;
+    text-decoration: none;
+}   
+
+.fa-envelope {
+    margin-right: 10px;
+    color: rgb(154, 154, 156);
+}
+
+.fa-phone {
+    margin-right: 10px;
+    color: rgb(154, 154, 156);
+    
+}

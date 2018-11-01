@@ -1,0 +1,106 @@
+.card__about-img {
+    background-image: url(./project/images/about-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second-row__card-about {
+    width: 25%;
+    height: 22vw; 
+}
+
+.card__my-skills {
+    background-color: #E4AE58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-light--My-skills {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-light--skills-list {
+    font-size: 1em;
+    color: white;
+}
+
+.text-light--big {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.text-light--sed {
+    font-size: 1em;
+    color: rgb(236, 209, 142);
+    margin-bottom: 20px;
+}
+
+.text-light--phasselus {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.text-light--Quisque {
+    font-size: 1em;
+}
+
+.donec__content-box {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card__donec {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.white__stripe {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+
+.black-stripe__fe {
+    background-color: black;
+    height: 3px;
+    width: 90%;
+}
+
+.fe__mesure-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.black-stripe__be {
+    background-color: black;
+    height: 3px;
+    width: 70%;
+}
+
+.black-stripe__html {
+    background-color: black;
+    height: 3px;
+    width: 80%;
+}
+
+.my-skills__content-box {
+    width: 80%;
+}
+
+.fe__mesure-text {
+    margin-top: 15px;
+}
+
+.fe__mesure-text--persent {
+    color: white;
+}
+
+.fe__mesure-text--margin{
+    margin-top: 40px;
+}

@@ -1,0 +1,70 @@
+.fourth-row__card {
+    width: 50%;
+    height: 30vw;
+}
+
+.fourth-row__card-experiences-img {
+    background-image: url(./project/images/experience-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth-row__card-experiences--red {
+    background-color: #E9714C;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fourth-row__card-red--white {
+    color: white;
+}
+
+.fourth-row__card-red__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.fourth-row__card-red--big {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.fourth-row__card-red {
+    font-size: 1em;
+}
+
+.fourth-row__card-red-exp {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.text-semibold--middle {
+    font-size: 1.4em;
+
+}
+
+.fourth-row__card-red-exp {
+    font-size: 1em;
+    color: white;
+}
+
+.text-light--xtra-small {
+    color: black;
+    margin-left: 5px;
+}
+
+.text-light--xtra-small--white {
+    margin-top: 15px;
+}
+
+.text-light--integer {
+    color: white;
+}
+
+.card-red__logo-spaceing {
+    padding-top: 5px;
+    padding-right: 40px;
+}
