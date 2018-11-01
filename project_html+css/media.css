@@ -103,7 +103,7 @@
 
 @media (max-width: 500px) {
     .card__donec {
-        height: 100vw;
+        height: 120vw;
     }
     .fourth-row__card {
         height: 150vw;

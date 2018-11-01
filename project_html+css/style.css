@@ -348,6 +348,10 @@
     margin-top: 15px;
 }
 
+.text-light--integer {
+    color: white;
+}
+
 .card-red__logo-spaceing {
     padding-top: 5px;
     padding-right: 40px;
@@ -430,7 +434,7 @@
 
 .form__small-input {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: #E9714C;
     border-style: none;
     border-bottom: #E4AE58 1px solid;
