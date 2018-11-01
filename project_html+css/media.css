@@ -148,9 +148,3 @@
          font-size: 12px;
      }
 }
-
-@media (max-width: 400px) {
-   .seventh-row__card-form {
-       height: 200vw;
-   }
-}
