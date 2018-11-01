@@ -62,6 +62,9 @@
         box-shadow: (0 0 4px black);
         transition: top 0.3s;
     }
+    .home-card__text {
+        display: none;
+    }
 }
 
 @media (max-width: 740px) {
@@ -122,17 +125,32 @@
     }
     .nav-card__content-box {
         margin-top: 0;
+
     }
     .sprite__socials {
         width: 80%;
     }
+    .nav__container {
+        width: 100%;
+    }
+    .link-text {
+        font-size: 12px;
+    }
+    
 }
 
 @media (max-width: 500px) {
-.nav__container {
-   width: 100%;
+    .nav__container {
+        width: 100%;
+        justify-content: space-around;
+     }
+     .link-text {
+         font-size: 12px;
+     }
 }
-.link-text {
-    font-size: 12px;
-}
+
+@media (max-width: 400px) {
+   .seventh-row__card-form {
+       height: 200vw;
+   }
 }
