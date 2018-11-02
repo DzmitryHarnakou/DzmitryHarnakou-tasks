@@ -17,7 +17,8 @@ for (var n =1; n <= l; n++) {
   }
   sum +=result;
 }
-return sum;
+var str = sum + " ";
+return str.slice(-11);
 }
 
-alert (sum(10));
+console.log(sum(10));
