@@ -1,20 +1,14 @@
-
-//!!!!!!!!!!!!!!!!!!!//
-//Определить, является ли фраза/слово полиндромом
-var word = "ДОХОД"
-function isPolindrom(word) {
-    var splitWord = word.split('');
-    var reverseSplitWord = word.split('').reverse();
-    for (var i = 0; i < splitWord.length; i++){
-        if (splitWord[i] == reverseSplitWord[i]) {
-            return true;
-        }
-        else {
-            return false;
-        }
+var checkWord = "ДОХОД"
+function isPolindrom(checkWord) {
+    var outputBoolean = false;
+    var checkWordInLowerCase = checkWord.toLowerCase();
+    var reverseSplitCheckWordInLowerCase = checkWordInLowerCase.split('').reverse();
+    var reverseCheckWordInLowerCase = reverseSplitCheckWordInLowerCase.join('');
+    console.log (checkWordInLowerCase);
+    console.log (reverseCheckWordInLowerCase);
+    if (checkWordInLowerCase == reverseCheckWordInLowerCase) {
+        outputBoolean = true;
     }
+    return outputBoolean;
 }
-alert (isPolindrom(word));
-
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
-//Найти сумму цифр данного числа
+alert (isPolindrom(checkWord));
