@@ -1,18 +1,18 @@
+get_value.onclick = function () {
 
-var arithmeticAverageArr = [1,2,3,4,5];
+    var inputString = document.getElementById('input_arr').value;
+    var inputArr = inputString.split(',');
 
-//Найти максимальное число в массиве.
-function max(arithmeticAverageArr) {
-    var max =  0
-    for (var i = 0; i < arithmeticAverageArr.length; i++){
-        for (var j = 0; j < arithmeticAverageArr.length; j++){
-            if (arithmeticAverageArr[j]>arithmeticAverageArr[i]) {
-                max = arithmeticAverageArr[j];
-            } else {
+    function getMaxValue(inputArr) {
+        var maxValue = 0
+        for (var i = 0; i < inputArr.length; i++) {
+            for (var j = 0; j < inputArr.length; j++) {
+                if (parseInt(inputArr[j]) > parseInt(inputArr[i])) {
+                    maxValue = parseInt(inputArr[j]);
+                } else {}
             }
         }
+        return maxValue;
     }
-    return max;
+    document.getElementById('output_value').value = getMaxValue(inputArr);
 }
-
-alert (max(arithmeticAverageArr));

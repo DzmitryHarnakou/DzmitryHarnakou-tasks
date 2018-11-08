@@ -1,53 +1,53 @@
-var m = 5; //колличество четных чисел фибоначчи
-var n = 100000; //колличество чисел фибоначчи
-//функция выводящая массив n чисел фибоначчи
-function getfib(n) {
-    var a = 1,
-        b = 1;
-    var getfibArr = [1,1];
-    for (var i = 3; i <= n; i++) {
-      var c = a + b;
-      a = b;
-      b = c;
-      getfibArr.push(c);
-    }
-    return getfibArr;
-  }
+get_value.onclick = function () {
 
-var getfibArr = getfib(n);  
+    var maxValue = document.getElementById('max_value').value;
+    var limit = document.getElementById('limit').value;
 
-//функция выводящая массив четных чисел фибоначчи
-function getfibEvenNumbers(getfibArr) {
-    getfibEvenNumbersarr = [];
-    for (var i=0; i<=getfibArr.length; i++){
-        if (getfibArr[i]%2 == 0) {
-            getfibEvenNumbersarr.push (getfibArr[i]);
+    function getfibNumbers(maxValue) {
+        var previousFibNuber = 1;
+        var fibNumber = 1;
+        var fibArr = [1, 1];
+        for (var i = 3; i <= maxValue; i++) {
+            var nextFibNumber = previousFibNuber + fibNumber;
+            previousFibNuber = fibNumber;
+            fibNumber = nextFibNumber;
+            fibArr.push(nextFibNumber);
         }
+        return fibArr;
     }
-    return getfibEvenNumbersarr;
-}
 
-var getfibEvenNumbersarr = getfibEvenNumbers(getfibArr);
+    var fibArr = getfibNumbers(maxValue);
 
-
-//функция выводящая массив m четных чисел фибоначчи
-function getLimitedFibEvenNumbers (getfibEvenNumbersarr, m) {
-    var getLimitedFibEvenNumbers = [];
-    for (var g = 0; g < m ; g++) {
-        getLimitedFibEvenNumbers.push(getfibEvenNumbersarr[g]);
+    function getfibEvenNumbers(fibArr) {
+        fibEvenNumbersArr = [];
+        for (var i = 0; i <= fibArr.length; i++) {
+            if (fibArr[i] % 2 == 0) {
+                fibEvenNumbersArr.push(fibArr[i]);
+            }
+        }
+        return fibEvenNumbersArr;
     }
-    return getLimitedFibEvenNumbers;
-}
 
-var getLimitedFibEvenNumbers = getLimitedFibEvenNumbers(getfibEvenNumbersarr, m);
+    var fibEvenNumbersArr = getfibEvenNumbers(fibArr);
 
-//функция выводящая сумму  m первых четных чисел фибоначчи
-function getLimitedFibEvenNumbersSum (getLimitedFibEvenNumbers) {
-    var getLimitedFibEvenNumbersSum = 0;
-    for (var j = 0; j < getLimitedFibEvenNumbers.length; j++) {
-        getLimitedFibEvenNumbersSum += getLimitedFibEvenNumbers[j];
+    function getLimitedFibEvenNumbers(fibEvenNumbersArr, limit) {
+        var limitedFibEvenNumbers = [];
+        for (var g = 0; g < limit; g++) {
+            limitedFibEvenNumbers.push(fibEvenNumbersArr[g]);
+        }
+        return limitedFibEvenNumbers;
     }
-    return getLimitedFibEvenNumbersSum;
-}
 
-alert (getLimitedFibEvenNumbersSum(getLimitedFibEvenNumbers));
+    var limitedFibEvenNumbers = getLimitedFibEvenNumbers(fibEvenNumbersArr, limit);
+
+    //функция выводящая сумму  m первых четных чисел фибоначчи
+    function getLimitedFibEvenNumbersSum(limitedFibEvenNumbers) {
+        var limitedFibEvenNumbersSum = 0;
+        for (var j = 0; j < limitedFibEvenNumbers.length; j++) {
+            limitedFibEvenNumbersSum += limitedFibEvenNumbers[j];
+        }
+        return limitedFibEvenNumbersSum;
+    }
+
+    document.getElementById('output_value').value = getLimitedFibEvenNumbersSum(limitedFibEvenNumbers);
+}

@@ -1,11 +1,26 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="./scrypt.js" ></script>
+    <div style="display: flex; width: max-content; flex-direction: column;">
+        <p>
+            Найти первые n простых чисел. 1 =< n <= 1000000
+        </p> 
+    <div style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 16px;">
+        <input type="text" id="max_value" placeholder="Максимальное значение диапазона" style="width: 70%">
+        <input type="button" value="Выполнить" id="get_value" style="width: 25%">
+    </div>
+        <input type="text" id="limit" style="margin-bottom: 16px;" placeholder="Колличество простых чисел">
+        <p>ОТВЕТ</p>
+        <textarea rows="20" id="output_value" style="width: 100%"></textarea>
+        <script src="./scrypt.js"></script>
+    </div>
 </body>
+
 </html>

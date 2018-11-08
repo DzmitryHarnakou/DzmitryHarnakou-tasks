@@ -1,14 +1,18 @@
-var inputArr = [1, 'word', 1, 'word', 'word', 'word1'];
+get_value.onclick = function () {
 
-function getUnique(inputArr) {
-  var outputObj = {};
+  var inputString = document.getElementById('input_arr').value;
+  var inputArr = inputString.split(',');
 
-  for (var i = 0; i < inputArr.length; i++) {
-    var objectKey = inputArr[i];
-    outputObj[objectKey] = true; 
+  function getUnique(inputArr) {
+    var objWithUniqueStr = {};
+
+    for (var i = 0; i < inputArr.length; i++) {
+      var objectKey = inputArr[i];
+      objWithUniqueStr[objectKey] = true;
+    }
+
+    return Object.keys(objWithUniqueStr);
   }
 
-  return Object.keys(outputObj);
+  document.getElementById('output_value').value = getUnique(inputArr);
 }
-
-alert (getUnique(inputArr));

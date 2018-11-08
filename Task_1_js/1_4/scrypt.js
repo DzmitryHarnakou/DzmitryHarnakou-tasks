@@ -1,24 +1,22 @@
-//Серия чисел, 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317 (^ - степень числа). Найдите 10 последних цифр результата такой последовательности,
-//для заданного n. 1 <= n <= 1000
+get_value.onclick = function () {
 
-//функция умножения, которая выводит только 10 последних цифр операции
+  var maxValue = document.getElementById('max_value').value;
 
-
-function sum(l){
-var sum = 0;
-for (var n =1; n <= l; n++) {
-  var result = 1;
-  var topLimit = 100000000000;
-  for (var m=1; m <= n; m++) {
-    result *= n;
-    if (result >= topLimit) {
-      result = result%10000000000;
+  function sum(maxValue) {
+    var sum = 0;
+    for (var n = 1; n <= maxValue; n++) {
+      var result = 1;
+      var topLimit = 100000000000;
+      for (var m = 1; m <= n; m++) {
+        result *= n;
+        if (result >= topLimit) {
+          result = result % 10000000000;
+        }
+      }
+      sum += result;
     }
+    var str = sum + " ";
+    return str.slice(-11);
   }
-  sum +=result;
+  document.getElementById('output_value').value = sum(maxValue);
 }
-var str = sum + " ";
-return str.slice(-11);
-}
-
-console.log(sum(10));

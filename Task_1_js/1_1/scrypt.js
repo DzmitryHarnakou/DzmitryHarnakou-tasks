@@ -1,31 +1,34 @@
-var n = 1000000000; //максимальное значение диапазона
-//функция выводящая массив единиц и нулей, где индекс - значение из диапазона, а значение: 1- простое число, 2-сложное
-function getAllNumbers (n){ 
-var arr = [];
-arr[1] = 0;
-for (var k = 2; k <= n; k++){
-    arr[k] = 1;
-}
-for (k = 2; k*k<=n; k++){
-    if(arr[k] == 1) {
-        for (var l=k*k; l<=n; l+=k){
-            arr[l] = 0;
+get_value.onclick = function () {
+
+    var maxValue = document.getElementById('max_value').value;
+    var booleanArr = getAllNumbers(maxValue);
+
+    document.getElementById('output_value').value = getAllSimpleNumbers(maxValue, booleanArr);
+
+    function getAllNumbers(maxValue) {
+        var booleanArr = [];
+        booleanArr[1] = 0;
+        for (var k = 2; k <= maxValue; k++) {
+            booleanArr[k] = 1;
         }
+        for (k = 2; k * k <= maxValue; k++) {
+            if (booleanArr[k] == 1) {
+                for (var l = k * k; l <= maxValue; l += k) {
+                    booleanArr[l] = 0;
+                }
+            }
+        }
+        return booleanArr;
     }
-}
-return arr;
-}
 
-var arr = getAllNumbers(n);
-//функция выводящая массив простых чисел из индексов функции getAllNumbers
-function getAllSimpleNumbers (n, arr){
-    var outputarr = [];
-    for (var i = 0; i <= n; i++){
-        if (arr[i]) {
-            outputarr.push (i);
-        } 
+    function getAllSimpleNumbers(maxValue, booleanArr) {
+        var simpleNumArr = [];
+        for (var i = 0; i <= maxValue; i++) {
+            if (booleanArr[i]) {
+                simpleNumArr.push(i);
+            }
+        }
+        return simpleNumArr;
     }
-    return outputarr;
-}
 
-console.log (getAllSimpleNumbers(n, arr));
+}
