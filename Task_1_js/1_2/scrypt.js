@@ -40,6 +40,6 @@ get_value.onclick = function () {
         }
         return limitedSimpleNumArr;
     }
-    document.getElementById('output_value').value = getLimitetSimplenumbers(simpleNumbersLimit, outputarr);
+    document.getElementById('output_value').innerHTML = getLimitetSimplenumbers(simpleNumbersLimit, outputarr);
 
 }

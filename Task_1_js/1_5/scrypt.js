@@ -13,5 +13,5 @@ get_value.onclick = function () {
         return arithmeticAverage;
     }
 
-    document.getElementById('output_value').value = getArithmeticAverage(arithmeticAverageArr);
+    document.getElementById('output_value').innerHTML = getArithmeticAverage(arithmeticAverageArr);
 }

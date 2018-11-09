@@ -3,7 +3,7 @@ get_value.onclick = function () {
     var maxValue = document.getElementById('max_value').value;
     var booleanArr = getAllNumbers(maxValue);
 
-    document.getElementById('output_value').value = getAllSimpleNumbers(maxValue, booleanArr);
+    document.getElementById('output_value').innerHTML = getAllSimpleNumbers(maxValue, booleanArr);
 
     function getAllNumbers(maxValue) {
         var booleanArr = [];

@@ -10,5 +10,5 @@ get_value.onclick = function () {
         }
         return sum;
     }
-    document.getElementById('output_value').value = sum(inputStringOfNumbers);
+    document.getElementById('output_value').innerHTML = sum(inputStringOfNumbers);
 }

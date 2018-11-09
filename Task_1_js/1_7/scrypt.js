@@ -14,5 +14,5 @@ get_value.onclick = function () {
     return Object.keys(objWithUniqueStr);
   }
 
-  document.getElementById('output_value').value = getUnique(inputArr);
+  document.getElementById('output_value').innerHTML = getUnique(inputArr);
 }

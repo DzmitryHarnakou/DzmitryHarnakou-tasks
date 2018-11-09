@@ -14,5 +14,5 @@ get_value.onclick = function () {
         }
         return outputBoolean;
     }
-    document.getElementById('output_value').value = isPolindrom(inputString);
+    document.getElementById('output_value').innerHTML = isPolindrom(inputString);
 }

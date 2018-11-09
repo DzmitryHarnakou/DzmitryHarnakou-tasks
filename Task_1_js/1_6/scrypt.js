@@ -14,5 +14,5 @@ get_value.onclick = function () {
         }
         return maxValue;
     }
-    document.getElementById('output_value').value = getMaxValue(inputArr);
+    document.getElementById('output_value').innerHTML = getMaxValue(inputArr);
 }

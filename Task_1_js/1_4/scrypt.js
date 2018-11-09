@@ -18,5 +18,5 @@ get_value.onclick = function () {
     var str = sum + " ";
     return str.slice(-11);
   }
-  document.getElementById('output_value').value = sum(maxValue);
+  document.getElementById('output_value').innerHTML = sum(maxValue);
 }

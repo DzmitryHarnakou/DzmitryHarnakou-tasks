@@ -49,5 +49,5 @@ get_value.onclick = function () {
         return limitedFibEvenNumbersSum;
     }
 
-    document.getElementById('output_value').value = getLimitedFibEvenNumbersSum(limitedFibEvenNumbers);
+    document.getElementById('output_value').innerHTML = getLimitedFibEvenNumbersSum(limitedFibEvenNumbers);
 }
