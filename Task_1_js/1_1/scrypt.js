@@ -1,11 +1,11 @@
 get_value.onclick = function () {
 
     var maxValue = document.getElementById('max_value').value;
-    var booleanArr = getAllNumbers(maxValue);
+    var booleanArr = getBooleanValues(maxValue);
 
     document.getElementById('output_value').innerHTML = getAllSimpleNumbers(maxValue, booleanArr);
 
-    function getAllNumbers(maxValue) {
+    function getBooleanValues(maxValue) {
         var booleanArr = [];
         booleanArr[1] = 0;
         for (var k = 2; k <= maxValue; k++) {

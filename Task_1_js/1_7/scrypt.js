@@ -3,6 +3,8 @@ get_value.onclick = function () {
   var inputString = document.getElementById('input_arr').value;
   var inputArr = inputString.split(',');
 
+  document.getElementById('output_value').innerHTML = getUnique(inputArr);
+
   function getUnique(inputArr) {
     var objWithUniqueStr = {};
 
@@ -14,5 +16,4 @@ get_value.onclick = function () {
     return Object.keys(objWithUniqueStr);
   }
 
-  document.getElementById('output_value').innerHTML = getUnique(inputArr);
 }

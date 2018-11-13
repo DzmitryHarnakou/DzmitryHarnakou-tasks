@@ -2,6 +2,10 @@ get_value.onclick = function () {
 
     var maxValue = document.getElementById('max_value').value;
     var simpleNumbersLimit = document.getElementById('limit').value;
+    var booleanArr = getAllNumbers(maxValue);
+    var outputarr = getAllSimpleNumbers(maxValue, booleanArr)
+
+    document.getElementById('output_value').innerHTML = getLimitetSimplenumbers(simpleNumbersLimit, outputarr);
 
     function getAllNumbers(maxValue) {
         var booleanArr = [];
@@ -19,8 +23,6 @@ get_value.onclick = function () {
         return booleanArr;
     }
 
-    var booleanArr = getAllNumbers(maxValue);
-
     function getAllSimpleNumbers(maxValue, booleanArr) {
         var simpleNumArr = [];
         for (var i = 0; i <= maxValue; i++) {
@@ -31,8 +33,6 @@ get_value.onclick = function () {
         return simpleNumArr;
     }
 
-    var outputarr = getAllSimpleNumbers(maxValue, booleanArr)
-
     function getLimitetSimplenumbers(simpleNumbersLimit, outputarr) {
         var limitedSimpleNumArr = [];
         for (var j = 0; j < simpleNumbersLimit; j++) {
@@ -40,6 +40,4 @@ get_value.onclick = function () {
         }
         return limitedSimpleNumArr;
     }
-    document.getElementById('output_value').innerHTML = getLimitetSimplenumbers(simpleNumbersLimit, outputarr);
-
 }

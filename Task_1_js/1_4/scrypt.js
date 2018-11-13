@@ -1,6 +1,8 @@
 get_value.onclick = function () {
 
   var maxValue = document.getElementById('max_value').value;
+  
+  document.getElementById('output_value').innerHTML = sum(maxValue);
 
   function sum(maxValue) {
     var sum = 0;
@@ -15,8 +17,8 @@ get_value.onclick = function () {
       }
       sum += result;
     }
-    var str = sum + " ";
-    return str.slice(-11);
+    var str = String(sum);
+    return str.slice(-10);
   }
-  document.getElementById('output_value').innerHTML = sum(maxValue);
+
 }

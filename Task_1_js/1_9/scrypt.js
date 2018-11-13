@@ -2,6 +2,8 @@ get_value.onclick = function () {
 
     var inputStringOfNumbers = document.getElementById('input_value').value;
 
+    document.getElementById('output_value').innerHTML = sum(inputStringOfNumbers);
+
     function sum(inputStringOfNumbers) {
         var arr = inputStringOfNumbers.split('');
         var sum = 0;
@@ -10,5 +12,5 @@ get_value.onclick = function () {
         }
         return sum;
     }
-    document.getElementById('output_value').innerHTML = sum(inputStringOfNumbers);
+
 }

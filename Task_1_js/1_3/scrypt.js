@@ -2,6 +2,11 @@ get_value.onclick = function () {
 
     var maxValue = document.getElementById('max_value').value;
     var limit = document.getElementById('limit').value;
+    var fibArr = getfibNumbers(maxValue);
+    var fibEvenNumbersArr = getfibEvenNumbers(fibArr);
+    var limitedFibEvenNumbers = getLimitedFibEvenNumbers(fibEvenNumbersArr, limit);
+
+    document.getElementById('output_value').innerHTML = getLimitedFibEvenNumbersSum(limitedFibEvenNumbers);
 
     function getfibNumbers(maxValue) {
         var previousFibNuber = 1;
@@ -16,8 +21,6 @@ get_value.onclick = function () {
         return fibArr;
     }
 
-    var fibArr = getfibNumbers(maxValue);
-
     function getfibEvenNumbers(fibArr) {
         fibEvenNumbersArr = [];
         for (var i = 0; i <= fibArr.length; i++) {
@@ -28,8 +31,6 @@ get_value.onclick = function () {
         return fibEvenNumbersArr;
     }
 
-    var fibEvenNumbersArr = getfibEvenNumbers(fibArr);
-
     function getLimitedFibEvenNumbers(fibEvenNumbersArr, limit) {
         var limitedFibEvenNumbers = [];
         for (var g = 0; g < limit; g++) {
@@ -38,9 +39,6 @@ get_value.onclick = function () {
         return limitedFibEvenNumbers;
     }
 
-    var limitedFibEvenNumbers = getLimitedFibEvenNumbers(fibEvenNumbersArr, limit);
-
-    //функция выводящая сумму  m первых четных чисел фибоначчи
     function getLimitedFibEvenNumbersSum(limitedFibEvenNumbers) {
         var limitedFibEvenNumbersSum = 0;
         for (var j = 0; j < limitedFibEvenNumbers.length; j++) {
@@ -48,6 +46,4 @@ get_value.onclick = function () {
         }
         return limitedFibEvenNumbersSum;
     }
-
-    document.getElementById('output_value').innerHTML = getLimitedFibEvenNumbersSum(limitedFibEvenNumbers);
 }
