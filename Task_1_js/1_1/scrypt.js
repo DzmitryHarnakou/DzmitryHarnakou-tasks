@@ -1,30 +1,30 @@
 get_value.onclick = function () {
 
     var maxValue = document.getElementById('max_value').value;
-    var booleanArr = getBooleanValues(maxValue);
+    var indexSimpleNuber = getArrayOfNumbersEqualBooleanMeaningsThatDisplayDoesIndexSImpleNumber(maxValue);
 
-    document.getElementById('output_value').innerHTML = getAllSimpleNumbers(maxValue, booleanArr);
+    document.getElementById('output_value').innerHTML = getAllSimpleNumbers(maxValue, indexSimpleNuber );
 
-    function getBooleanValues(maxValue) {
-        var booleanArr = [];
-        booleanArr[1] = 0;
+    function getArrayOfNumbersEqualBooleanMeaningsThatDisplayDoesIndexSImpleNumber (maxValue) {
+        var isIndexSimpleNuberArr = [];
+        isIndexSimpleNuberArr[1] = 0;
         for (var k = 2; k <= maxValue; k++) {
-            booleanArr[k] = 1;
+            isIndexSimpleNuberArr[k] = 1;
         }
         for (k = 2; k * k <= maxValue; k++) {
-            if (booleanArr[k] == 1) {
+            if (isIndexSimpleNuberArr[k] == 1) {
                 for (var l = k * k; l <= maxValue; l += k) {
-                    booleanArr[l] = 0;
+                    isIndexSimpleNuberArr[l] = 0;
                 }
             }
         }
-        return booleanArr;
+        return isIndexSimpleNuberArr;
     }
 
-    function getAllSimpleNumbers(maxValue, booleanArr) {
+    function getAllSimpleNumbers(maxValue, indexSimpleNuber ) {
         var simpleNumArr = [];
         for (var i = 0; i <= maxValue; i++) {
-            if (booleanArr[i]) {
+            if (indexSimpleNuber[i]) {
                 simpleNumArr.push(i);
             }
         }
