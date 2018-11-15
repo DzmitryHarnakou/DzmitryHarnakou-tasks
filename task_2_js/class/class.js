@@ -37,7 +37,7 @@ class Drums extends MusicalInstrument {
 	}
 
 	play() {
-		super.play(); //invoke parent method 
+		super.play();
 		console.log(`${this.name} ${this.model} plays very loud`);
 	}
 }

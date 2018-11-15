@@ -26,7 +26,6 @@ function Drums(type, name, model, availible, set) {
 		console.log(this.model + ' Consist of ' + this.set);
 	}
 
-	// Override
 	this.play = function () {
 
 		console.log(`${this.name} ${this.model} plays very loud`);
