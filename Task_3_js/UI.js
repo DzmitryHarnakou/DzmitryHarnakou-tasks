@@ -112,7 +112,7 @@
 
    datesRender(daysToDisplay, previousMonthLastDateDay, previousMonthLastDateDay, lastMonthDate, currentMonth, container);
 
-   document.getElementById("monthSelector__Forward").onclick = function forwardOnClick() {
+   document.getElementById("monthSelector__Forward").onclick = function () {
        counter(1);
        monthSelectorValue.remove();
        datesContainer.remove();
@@ -121,9 +121,9 @@
        monthRender(monthName, year, monthSelector);
        datesRender(daysToDisplay, previousMonthLastDateDay, previousMonthLastDateDay, lastMonthDate, currentMonth, container);
 
-   }
+   };
 
-   document.getElementById("monthSelector__Backward").onclick = function forwardOnClick() {
+   document.getElementById("monthSelector__Backward").onclick = function () {
        counter(-1);
        monthSelectorValue.remove();
        datesContainer.remove();
@@ -132,4 +132,4 @@
        monthRender(monthName, year, monthSelector);
        datesRender(daysToDisplay, previousMonthLastDateDay, previousMonthLastDateDay, lastMonthDate, currentMonth, container);
 
-   }
+   };
