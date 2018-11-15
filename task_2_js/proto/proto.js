@@ -6,10 +6,11 @@ function MusicalInstrument(type, name, model, availible) {
 }
 
 MusicalInstrument.prototype.play = function () {
-	console.log(name + " " + model + " " + "is playing");
+	console.log(`${this.name} ${this.model} is playing`);
 }
+
 MusicalInstrument.prototype.showType = function () {
-	console.log(name + " " + model + " " + "is" + this.type);
+	console.log(`${this.name} ${this.model} is ${this.type}`);
 }
 
 function Guitar(name, model, availible, type, strings) {
@@ -35,7 +36,6 @@ Drums.prototype.showSet = function () {
 }
 
 Drums.prototype.play = function () {
-
 	console.log(`${this.name} ${this.model} plays very loud`);
 }
 
