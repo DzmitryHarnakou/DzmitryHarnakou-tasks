@@ -6,9 +6,11 @@ get_value.onclick = function () {
     document.getElementById('output_value').innerHTML = getAllSimpleNumbers(maxValue, sieveOfEratosthenes);
 
 
-    /** @description Gets array of boolean meanings, where value display, is array index simple number,
+    /**
+     *  @description Gets array of boolean meanings, where value display, is array index simple number,
      * by the sieve of Eratosthene. (Sieve of Eratosthene method).  
      * @param {number} maxValue Last number of sieve and last index of array.  
+     * @returns {array} sieveOfEratosthenesArr Returns array of boolean meanings.
      */
     function getSieveOfEratosthenes(maxValue) {
         var sieveOfEratosthenesArr = [];
