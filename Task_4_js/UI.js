@@ -117,19 +117,6 @@ document.getElementById("monthSelector__Forward").onclick = function () {
     getMonth(currentYear, currentMonth, count, montArr);
     monthRender(monthName, year, monthSelector);
     datesRender(daysToDisplay, previousMonthLastDateDay, previousMonthLastDateDay, lastMonthDate, currentMonth, container);
-
-    datesContainer.onclick = function (event) {
-        var dateValue = event.target.innerHTML;
-        if (dateValue.length == 1) {
-            dateValue = 0 + dateValue;
-        }
-        if (dateValue.length < 1) {
-            container.style.display = "none";
-        } else {
-            dateInput.value = dateValue + "/" + (month + 1) + "/" + year;
-            container.style.display = "none";
-        }
-    }
 };
 
 document.getElementById("monthSelector__Backward").onclick = function () {
@@ -140,17 +127,4 @@ document.getElementById("monthSelector__Backward").onclick = function () {
     getMonth(currentYear, currentMonth, count, montArr);
     monthRender(monthName, year, monthSelector);
     datesRender(daysToDisplay, previousMonthLastDateDay, previousMonthLastDateDay, lastMonthDate, currentMonth, container);
-
-    datesContainer.onclick = function (event) {
-        var dateValue = event.target.innerHTML;
-        if (dateValue.length == 1) {
-            dateValue = 0 + dateValue;
-        }
-        if (dateValue.length < 1) {
-            container.style.display = "none";
-        } else {
-            dateInput.value = dateValue + "/" + (month + 1) + "/" + year;
-            container.style.display = "none";
-        }
-    }
 };
