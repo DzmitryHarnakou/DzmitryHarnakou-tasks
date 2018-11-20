@@ -8,15 +8,11 @@ var daysArr = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 var count = 0;
 var n = 0;
 
-
-
 function counter(n) {
 
     count += n;
     return count;
 };
-
-count = counter(n);
 
 function getLastMonthDate(currentYear, currentMonth, count) {
     var lastMonthDayFullDate = new Date(currentYear, currentMonth + 1 + count, 0);
@@ -24,7 +20,6 @@ function getLastMonthDate(currentYear, currentMonth, count) {
     var previousMonthLastFullDate = new Date(currentYear, currentMonth + count, 0);
     var previousMonthLastDate = previousMonthLastFullDate.getDate();
     this.previousMonthLastDateDay = previousMonthLastFullDate.getDay();
-
 
     var daysArr = [];
 
@@ -55,7 +50,6 @@ function getMonth(currentYear, currentMonth, count, montArr) {
     this.month = monthCount.getMonth();
     this.monthName = montArr[month];
     this.year = monthCount.getFullYear();
-
 }
 
 getMonth(currentYear, currentMonth, count, montArr);
