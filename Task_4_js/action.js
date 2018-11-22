@@ -24,6 +24,7 @@ function forward() {
 }
 
 function showCalendar() {
+    getMonth(currentYear, currentMonth, count, montArr);
     render();
     calendarStyle();
     displayValue();
@@ -31,12 +32,16 @@ function showCalendar() {
 
 function displayValue() {
     var datesContainer = document.getElementById('dates-container');
+    var dateInput = document.getElementById('date__input');
     var monthToDisplay = String(month + 1);
     if (monthToDisplay.length == 1) {
         monthToDisplay = 0 + monthToDisplay;
     }
     datesContainer.onclick = function (event) {
         var dateValue = event.target.innerHTML;
+        if (event.target == datesContainer) {
+            return;
+        }
         if (dateValue.length == 1) {
             dateValue = 0 + dateValue;
         }
@@ -48,3 +53,4 @@ function displayValue() {
         }
     }
 }
+

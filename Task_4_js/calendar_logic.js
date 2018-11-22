@@ -9,7 +9,6 @@ var count = 0;
 var n = 0;
 
 function counter(n) {
-
     count += n;
     return count;
 };
@@ -51,5 +50,3 @@ function getMonth(currentYear, currentMonth, count, montArr) {
     this.monthName = montArr[month];
     this.year = monthCount.getFullYear();
 }
-
-getMonth(currentYear, currentMonth, count, montArr);
