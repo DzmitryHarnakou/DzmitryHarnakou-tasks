@@ -5,8 +5,24 @@ calendContainer.insertBefore(inputContainer, calendContainer.firstChild);
 var dateInput = document.createElement('input');
 dateInput.id = "date__input";
 dateInput.className = "datepicker__input-element";
+inputContainer.appendChild(dateInput);
 
-dateInput.oninput = function (event, dateInput) {
+var calendarWievButton = document.createElement('input');
+calendarWievButton.className = "datepicker__input-button";
+calendarWievButton.id = "datepicker__button";
+inputContainer.appendChild(calendarWievButton);
+
+calendarWievButton.onclick = function () {
+    var container = document.getElementsByClassName('container');
+    if (container[0] === undefined) {
+        showCalendar();
+
+    } else {
+        removeContainer();
+    }
+}
+
+dateInput.oninput = function (event) {
     var target = event.target;
     var dateValue = target.value;
     var userValue = dateValue;
@@ -38,21 +54,5 @@ dateInput.oninput = function (event, dateInput) {
     }
     if (target.value == false) {
         target.style.color = "black";
-    }
-}
-inputContainer.appendChild(dateInput);
-
-var calendarWievButton = document.createElement('input');
-calendarWievButton.className = "datepicker__input-button";
-calendarWievButton.id = "datepicker__button";
-inputContainer.appendChild(calendarWievButton);
-
-calendarWievButton.onclick = function () {
-    var container = document.getElementsByClassName('container');
-    if (container[0] === undefined) {
-        showCalendar();
-
-    } else {
-        removeContainer();
     }
 }

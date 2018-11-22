@@ -1,7 +1,13 @@
 var calendContainer = document.getElementById('calend_container');
 
-
 function render() {
+
+    var daysToDisplay = getLastMonthDate(currentYear, currentMonth, count);
+    var monthName = getMonthName(montArr, month);
+    var month = getMonth(currentYear, currentMonth, count);
+    var year = getYear(currentYear, currentMonth, count);
+
+
     var container = document.createElement('div');
     container.className = "container";
     calendContainer.appendChild(container);

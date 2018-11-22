@@ -6,8 +6,6 @@ function removeContainer() {
 function backward() {
     removeContainer();
     counter(-1);
-    daysToDisplay = getLastMonthDate(currentYear, currentMonth, count);
-    getMonth(currentYear, currentMonth, count, montArr);
     render();
     calendarStyle();
     displayValue();
@@ -16,21 +14,20 @@ function backward() {
 function forward() {
     removeContainer();
     counter(1);
-    daysToDisplay = getLastMonthDate(currentYear, currentMonth, count);
-    getMonth(currentYear, currentMonth, count, montArr);
     render();
     calendarStyle();
     displayValue();
 }
 
 function showCalendar() {
-    getMonth(currentYear, currentMonth, count, montArr);
     render();
     calendarStyle();
     displayValue();
 }
 
 function displayValue() {
+    var month = getMonth(currentYear, currentMonth, count);
+    var year = getYear(currentYear, currentMonth, count);
     var datesContainer = document.getElementById('dates-container');
     var dateInput = document.getElementById('date__input');
     var monthToDisplay = String(month + 1);
@@ -53,4 +50,3 @@ function displayValue() {
         }
     }
 }
-
