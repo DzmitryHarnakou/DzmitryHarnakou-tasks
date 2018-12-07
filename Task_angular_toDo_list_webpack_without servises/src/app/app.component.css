@@ -1,0 +1,68 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.todo-list__component{
+    width: 30%;
+    padding: 2em;
+    background-color: rgb(238, 234, 234);
+    border-radius: 2em;
+    border: 1px;
+    border-color: gray;
+    border-style: double;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.todo-list__task-input{
+    height: 2.5em;
+    border: none;
+    outline: none;
+    width: calc(100% - 5em);
+    border-radius: 1.25em 0 0 1.25em;
+    text-align: center;
+}
+
+.todo-list__add-button{
+    outline: none;
+    color: white;
+    background-color: rgb(90, 149, 255);
+    border: none;
+    height: 2.5em;
+    width: 5em;
+    border-radius: 0 1.25em 1.25em 0;
+}
+
+.todo-list-container__item{
+    background-color: white;
+    margin-top: 0.1em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.todo-list-container__button{
+    height: 100%;
+    width: 5em;
+    background-color:  rgb(255, 92, 92);
+    border: 0px;
+    color: white;
+}
+
+.todo-list-container__item-without-button-task{
+    padding-left: 0.5em;
+    font-weight: bold;
+}
+
+.todo-list-container__item-without-button-task-done {
+    color: silver;
+}
+
+.todo-list-container__item-without-button {
+    display: flex;
+    flex-direction: row;
+}
