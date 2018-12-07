@@ -1,0 +1,14 @@
+<div *ngFor = 'let item of items; let i = index' class="todo-list-container todo-list-container__item">
+    <div class="todo-list-container__item-without-button">
+      <input type="checkbox" [(ngModel)]="item.done">
+      <div class="todo-list-container__item-without-button-task" [ngSwitch]="item.done">
+        <span *ngSwitchCase="true" class="todo-list-container__item-without-button-task-done">
+            {{items[i].action}}
+        </span>
+        <span *ngSwitchDefault>
+            {{items[i].action}}
+        </span>
+      </div>
+    </div>
+    <button (click)="deleteItem (i)" class="todo-list-container__button">Delete</button>
+  </div>

@@ -1,0 +1,6 @@
+<div class="todo-list todo-list__component">
+  <input type="text" class="todo-list__task-input" placeholder="Type a new task" #todoText >
+  <input type="button" value="Add" class="todo-list__add-button" (click) = "addItem(todoText.value)">
+  <list-item></list-item>
+</div>
+
