@@ -16,6 +16,7 @@
     background-color:  rgb(255, 92, 92);
     border: 0px;
     color: white;
+    outline: none;
 }
 
 .todo-list-container__item-without-button-task{
