@@ -16,11 +16,11 @@ export class AppComponent implements OnInit{
         this._todoListService = todoListService;
     }
 
-    ngOnInit() {
+    public ngOnInit() {
         this.items = this._todoListService.getData();
     }
 
-    addItem(item:string) {
+    public addItem(item:string) {
 
         if (item === "") {
             return;
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
         this._todoListService.addData(item);
     }
 
-    removeItem(i:number) {
+    public removeItem(i:number) {
         this._todoListService.removeData (i);
     }
 
