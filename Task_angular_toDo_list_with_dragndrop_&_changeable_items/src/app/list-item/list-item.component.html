@@ -1,0 +1,11 @@
+<div class="todo-list-container todo-list-container__item">
+  <div class="todo-list-container__item-without-button">
+    <input type="checkbox" [(ngModel)] = 'checkBox'>
+    <div class="todo-list-container__item-without-button-task">
+      <span class=".todo-list-container__item-without-button-task" (click) = "onSelect(i)" [class.todo-list-container__item-without-button-task-done]="checkBox">
+       {{i+1}}.  {{items[i]}}
+      </span>
+    </div>
+  </div>
+  <button class="todo-list-container__button" (click) = "removeItem(i)">Delete</button>
+</div>

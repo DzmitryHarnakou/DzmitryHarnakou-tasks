@@ -1,0 +1,7 @@
+<div class="todo-list todo-list__component" (focusout)= "removeIndex(); todoText.value = ''">
+  <input type="text" class="todo-list__task-input" placeholder="Type a new task" [(ngModel)] = "todoItemText" #todoText (ngModelChange) = "changeItem(todoItemText)">
+  <input type="button" value="Add" class="todo-list__add-button" (click)="addItem(todoItemText); todoText.value = ''">
+  <div cdkDropList (cdkDropListDropped)="drop($event)">
+    <list-item cdkDrag [items]="items" (selectedItem) = "getIndex($event, todoItemText); todoText.value = items[$event]" (removeCurrentItem)='removeItem($event)' [i]="i" *ngFor='let item of items; let i = index'></list-item>
+  </div>
+</div>
