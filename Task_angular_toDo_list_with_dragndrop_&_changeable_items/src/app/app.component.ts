@@ -48,6 +48,7 @@ export class AppComponent implements OnInit{
 
     changeItem(todoItemText:string) {
         this.items[this.index] = todoItemText;
+        localStorage.setItem('data', this.items);
     }
 
     removeItem(i:number) {
@@ -56,6 +57,7 @@ export class AppComponent implements OnInit{
 
     drop(event: CdkDragDrop<any[]>){
         moveItemInArray(this.items, event.previousIndex, event.currentIndex);
+        localStorage.setItem('data', this.items);
     }
 
 }
